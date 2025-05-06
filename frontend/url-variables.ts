@@ -1,0 +1,1 @@
+export const apiURL = 'ec2-13-50-250-33.eu-north-1.compute.amazonaws.com:3001';
