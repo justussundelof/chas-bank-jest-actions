@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { apiURL } from '../url-variables';
-
+import { apiURL } from "../url-variables";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -27,7 +26,7 @@ export default function Login() {
       console.error(err);
     }
   };
-
+  console.log("ä");
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
       <div className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
