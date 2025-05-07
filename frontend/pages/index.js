@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* Navbar */}
       <nav className="flex justify-between items-center p-6 bg-white shadow">
         <h1 className="text-xl font-bold text-blue-600">MinBank</h1>
         <div className="space-x-4">
@@ -28,7 +27,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <main className="flex-grow flex items-center justify-center text-center px-4">
         <div className="max-w-xl">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
