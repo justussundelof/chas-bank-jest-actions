@@ -1,1 +1,1 @@
-﻿# [Min bank-sida](http://ec2-13-50-250-33.eu-north-1.compute.amazonaws.com:3000
+﻿# http://ec2-13-50-250-33.eu-north-1.compute.amazonaws.com:3000
