@@ -1,32 +1,23 @@
-/* const nextJest = require("next/jest");
+const nextJest = require("next/jest");
 
 const createJestConfig = nextJest({
-  dir: "./frontend",
+  dir: "./frontend",  // Path to your frontend directory
 });
 
 const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/frontend/jest.setup.js"],
   testEnvironment: "jsdom",
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest",  // Use ts-jest for TypeScript files
+  },
   moduleNameMapper: {
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",  // Handle CSS imports
+  },
+  globals: {
+    "ts-jest": {
+      tsconfig: "frontend/tsconfig.json",  // Path to your TypeScript config
+    },
   },
 };
 
 module.exports = createJestConfig(customJestConfig);
- */
-
-module.exports = {
-    preset: 'ts-jest',      // Use ts-jest preset for transforming TypeScript
-    testEnvironment: 'node', // You can change this if you're working in the browser (e.g., 'jsdom')
-    transform: {
-      '^.+\\.(ts|tsx)$': 'ts-jest', // Transform TypeScript and TSX files
-    },
-    globals: {
-      'ts-jest': {
-        tsconfig: 'tsconfig.json',  // Make sure Jest uses your TypeScript config
-      },
-    },
-    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],  // Add TS/TSX file extensions
-    // other Jest configurations if needed
-  };
-  
