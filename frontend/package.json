@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "text:ci": "jest --ci --runInBand --coverage"
+    "test:ci": "jest --ci --runInBand --coverage"
   },
   "dependencies": {
     "react": "^18",
