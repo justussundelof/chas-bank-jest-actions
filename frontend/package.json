@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "text:ci": "jest --ci --runInBand --coverage"
   },
   "dependencies": {
     "react": "^18",
