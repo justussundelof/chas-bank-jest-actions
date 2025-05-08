@@ -49,6 +49,7 @@ export default function Signup() {
           />
           <button
             type="submit"
+            name="registrera"
             className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
           >
             Registrera
