@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",                     // Compile to ES5 for browser compatibility
+    "module": "commonjs",                 // Use commonjs module system (for Node.js)
+    "strict": true,                       // Enable strict type-checking options
+    "esModuleInterop": true,              // Enable ES module interop
+    "skipLibCheck": true,                 // Skip checking types in libraries
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file name casing
+    "jsx": "react"                        // Enable JSX support for React (if using JSX)
+  },
+  "include": [
+    "frontend/**/*",    // Include everything under 'frontend' directory (if you want to handle JS and TS in frontend)
+    "tests/**/*",       // Include all test files under 'tests' (you can create this folder if it doesn't exist)
+    "backend/**/*"      // Optionally include any backend TypeScript files if applicable
+  ]
+}
